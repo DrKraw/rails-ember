@@ -1,5 +1,8 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Our first page</h1>
+<p>Hi There</p>
 
-{{outlet}}
+<ul>
+  {{#each model as |monster|}}
+    <li>{{monster.name}} is level {{monster.level}}</li>
+  {{/each}}
+</ul>
